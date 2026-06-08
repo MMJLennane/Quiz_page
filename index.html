@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>index.html</title>
+        <link rel="stylesheet" href="index.css" />
+    </head>
+    <body>
+        <div class="page-shell">
+            <header class="hero">
+                <div class="hero-copy">
+                    <p class="eyebrow">Fun quiz time</p>
+                    <h1>Matts Magnificent Quiz</h1>
+                    <p class="hero-text">
+                        A joyful 20-question quiz with 4 answer choices each. You’ll see dropdowns, radio buttons,
+                        number inputs, and checkboxes. Press start when you’re ready!
+                    </p>
+                    <button id="startButton" type="button">Start Quiz</button>
+                </div>
+            </header>
+
+            <main id="quizContainer" class="quiz-container hidden">
+                <form id="quizForm">
+                    <section class="question-group">
+                        <h2>Questions 1–5: Dropdown style</h2>
+                        <div class="question">
+                            <label for="q1">1) Question text goes here</label>
+                            <select id="q1" name="q1" data-correct="option1" required>
+                                <option value="">Choose an answer</option>
+                                <option value="option1">Option 1</option>
+                                <option value="option2">Option 2</option>
+                                <option value="option3">Option 3</option>
+                                <option value="option4">Option 4</option>
+                            </select>
+                        </div>
+                        <div class="question">
+                            <label for="q2">2) Question text goes here</label>
+                            <select id="q2" name="q2" data-correct="option2" required>
+                                <option value="">Choose an answer</option>
+                                <option value="option1">Option 1</option>
+                                <option value="option2">Option 2</option>
+                                <option value="option3">Option 3</option>
+                                <option value="option4">Option 4</option>
+                            </select>
+                        </div>
+                        <div class="question">
+                            <label for="q3">3) Question text goes here</label>
+                            <select id="q3" name="q3" data-correct="option3" required>
+                                <option value="">Choose an answer</option>
+                                <option value="option1">Option 1</option>
+                                <option value="option2">Option 2</option>
+                                <option value="option3">Option 3</option>
+                                <option value="option4">Option 4</option>
+                            </select>
+                        </div>
+                        <div class="question">
+                            <label for="q4">4) Question text goes here</label>
+                            <select id="q4" name="q4" data-correct="option4" required>
+                                <option value="">Choose an answer</option>
+                                <option value="option1">Option 1</option>
+                                <option value="option2">Option 2</option>
+                                <option value="option3">Option 3</option>
+                                <option value="option4">Option 4</option>
+                            </select>
+                        </div>
+                        <div class="question">
+                            <label for="q5">5) Question text goes here</label>
+                            <select id="q5" name="q5" data-correct="option1" required>
+                                <option value="">Choose an answer</option>
+                                <option value="option1">Option 1</option>
+                                <option value="option2">Option 2</option>
+                                <option value="option3">Option 3</option>
+                                <option value="option4">Option 4</option>
+                            </select>
+                        </div>
+                    </section>
+
+                    <section class="question-group">
+                        <h2>Questions 6–10: Radio buttons</h2>
+                        <fieldset class="question radio-group">
+                            <legend>6) Question text goes here</legend>
+                            <div class="option-row">
+                                <label><input type="radio" name="q6" value="option1" /> Option 1</label>
+                                <label><input type="radio" name="q6" value="option2" data-correct="true" /> Option 2</label>
+                                <label><input type="radio" name="q6" value="option3" /> Option 3</label>
+                                <label><input type="radio" name="q6" value="option4" /> Option 4</label>
+                            </div>
+                        </fieldset>
+                        <fieldset class="question radio-group">
+                            <legend>7) Question text goes here</legend>
+                            <div class="option-row">
+                                <label><input type="radio" name="q7" value="option1" /> Option 1</label>
+                                <label><input type="radio" name="q7" value="option2" /> Option 2</label>
+                                <label><input type="radio" name="q7" value="option3" data-correct="true" /> Option 3</label>
+                                <label><input type="radio" name="q7" value="option4" /> Option 4</label>
+                            </div>
+                        </fieldset>
+                        <fieldset class="question radio-group">
+                            <legend>8) Question text goes here</legend>
+                            <div class="option-row">
+                                <label><input type="radio" name="q8" value="option1" data-correct="true" /> Option 1</label>
+                                <label><input type="radio" name="q8" value="option2" /> Option 2</label>
+                                <label><input type="radio" name="q8" value="option3" /> Option 3</label>
+                                <label><input type="radio" name="q8" value="option4" /> Option 4</label>
+                            </div>
+                        </fieldset>
+                        <fieldset class="question radio-group">
+                            <legend>9) Question text goes here</legend>
+                            <div class="option-row">
+                                <label><input type="radio" name="q9" value="option1" /> Option 1</label>
+                                <label><input type="radio" name="q9" value="option2" /> Option 2</label>
+                                <label><input type="radio" name="q9" value="option3" /> Option 3</label>
+                                <label><input type="radio" name="q9" value="option4" data-correct="true" /> Option 4</label>
+                            </div>
+                        </fieldset>
+                        <fieldset class="question radio-group">
+                            <legend>10) Question text goes here</legend>
+                            <div class="option-row">
+                                <label><input type="radio" name="q10" value="option1" /> Option 1</label>
+                                <label><input type="radio" name="q10" value="option2" /> Option 2</label>
+                                <label><input type="radio" name="q10" value="option3" data-correct="true" /> Option 3</label>
+                                <label><input type="radio" name="q10" value="option4" /> Option 4</label>
+                            </div>
+                        </fieldset>
+                    </section>
+
+                    <section class="question-group">
+                        <h2>Questions 11–15: Number answers</h2>
+                        <div class="question">
+                            <label for="q11">11) Question text goes here</label>
+                            <input type="number" id="q11" name="q11" data-correct="4" min="0" max="100" placeholder="Enter a number" required />
+                        </div>
+                        <div class="question">
+                            <label for="q12">12) Question text goes here</label>
+                            <input type="number" id="q12" name="q12" data-correct="7" min="0" max="100" placeholder="Enter a number" required />
+                        </div>
+                        <div class="question">
+                            <label for="q13">13) Question text goes here</label>
+                            <input type="number" id="q13" name="q13" data-correct="12" min="0" max="100" placeholder="Enter a number" required />
+                        </div>
+                        <div class="question">
+                            <label for="q14">14) Question text goes here</label>
+                            <input type="number" id="q14" name="q14" data-correct="9" min="0" max="100" placeholder="Enter a number" required />
+                        </div>
+                        <div class="question">
+                            <label for="q15">15) Question text goes here</label>
+                            <input type="number" id="q15" name="q15" data-correct="2" min="0" max="100" placeholder="Enter a number" required />
+                        </div>
+                    </section>
+
+                    <section class="question-group">
+                        <h2>Questions 16–20: Checkboxes</h2>
+                        <fieldset class="question checkbox-group" data-question="16" data-correct="option1">
+                            <legend>16) Question text goes here (choose one)</legend>
+                            <div class="option-row">
+                                <label><input type="checkbox" name="q16" value="option1" /> Option 1</label>
+                                <label><input type="checkbox" name="q16" value="option2" /> Option 2</label>
+                                <label><input type="checkbox" name="q16" value="option3" /> Option 3</label>
+                                <label><input type="checkbox" name="q16" value="option4" /> Option 4</label>
+                            </div>
+                        </fieldset>
+                        <fieldset class="question checkbox-group" data-question="17" data-correct="option2">
+                            <legend>17) Question text goes here (choose one)</legend>
+                            <div class="option-row">
+                                <label><input type="checkbox" name="q17" value="option1" /> Option 1</label>
+                                <label><input type="checkbox" name="q17" value="option2" /> Option 2</label>
+                                <label><input type="checkbox" name="q17" value="option3" /> Option 3</label>
+                                <label><input type="checkbox" name="q17" value="option4" /> Option 4</label>
+                            </div>
+                        </fieldset>
+                        <fieldset class="question checkbox-group" data-question="18" data-correct="option3">
+                            <legend>18) Question text goes here (choose one)</legend>
+                            <div class="option-row">
+                                <label><input type="checkbox" name="q18" value="option1" /> Option 1</label>
+                                <label><input type="checkbox" name="q18" value="option2" /> Option 2</label>
+                                <label><input type="checkbox" name="q18" value="option3" /> Option 3</label>
+                                <label><input type="checkbox" name="q18" value="option4" /> Option 4</label>
+                            </div>
+                        </fieldset>
+                        <fieldset class="question checkbox-group" data-question="19" data-correct="option4">
+                            <legend>19) Question text goes here (choose one)</legend>
+                            <div class="option-row">
+                                <label><input type="checkbox" name="q19" value="option1" /> Option 1</label>
+                                <label><input type="checkbox" name="q19" value="option2" /> Option 2</label>
+                                <label><input type="checkbox" name="q19" value="option3" /> Option 3</label>
+                                <label><input type="checkbox" name="q19" value="option4" /> Option 4</label>
+                            </div>
+                        </fieldset>
+                        <fieldset class="question checkbox-group" data-question="20" data-correct="option1">
+                            <legend>20) Question text goes here (choose one)</legend>
+                            <div class="option-row">
+                                <label><input type="checkbox" name="q20" value="option1" /> Option 1</label>
+                                <label><input type="checkbox" name="q20" value="option2" /> Option 2</label>
+                                <label><input type="checkbox" name="q20" value="option3" /> Option 3</label>
+                                <label><input type="checkbox" name="q20" value="option4" /> Option 4</label>
+                            </div>
+                        </fieldset>
+                    </section>
+
+                    <div class="quiz-actions">
+                        <button type="button" onclick="checkAnswers()">Submit Answers</button>
+                        <button type="button" onclick="resetQuiz()">Reset Quiz</button>
+                    </div>
+
+                    <div id="resultBox" class="result-box hidden"></div>
+                </form>
+            </main>
+        </div>
+
+        <script>
+            const quizContainer = document.getElementById('quizContainer');
+            const startButton = document.getElementById('startButton');
+            const resultBox = document.getElementById('resultBox');
+            const quizForm = document.getElementById('quizForm');
+
+            startButton.addEventListener('click', startQuiz);
+
+            function startQuiz() {
+                document.querySelector('.hero').classList.add('hidden');
+                quizContainer.classList.remove('hidden');
+                resultBox.classList.add('hidden');
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+
+            function checkAnswers() {
+                const fields = quizForm.querySelectorAll('.question, fieldset.checkbox-group');
+                let score = 0;
+                const warnings = [];
+
+                fields.forEach((field) => {
+                    if (field.matches('fieldset.checkbox-group')) {
+                        const checkboxes = Array.from(field.querySelectorAll('input[type="checkbox"]'));
+                        const selected = checkboxes.filter((item) => item.checked);
+                        const questionNumber = field.dataset.question || 'unknown';
+
+                        if (selected.length === 0) {
+                            warnings.push(`Question ${questionNumber} needs an answer.`);
+                            return;
+                        }
+
+                        if (selected.length > 1) {
+                            warnings.push(`Question ${questionNumber} only allows one checkbox selection.`);
+                            return;
+                        }
+
+                        if (selected[0].value === field.dataset.correct) {
+                            score += 1;
+                        }
+                        return;
+                    }
+
+                    const select = field.querySelector('select');
+                    const number = field.querySelector('input[type="number"]');
+                    const radioOptions = Array.from(field.querySelectorAll('input[type="radio"]'));
+
+                    if (select) {
+                        if (!select.value) {
+                            warnings.push(`Please answer question ${select.id}.`);
+                            return;
+                        }
+                        if (select.value === select.dataset.correct) {
+                            score += 1;
+                        }
+                        return;
+                    }
+
+                    if (number) {
+                        if (!number.value.trim()) {
+                            warnings.push(`Please answer question ${number.id}.`);
+                            return;
+                        }
+                        if (number.value.trim() === number.dataset.correct) {
+                            score += 1;
+                        }
+                        return;
+                    }
+
+                    if (radioOptions.length > 0) {
+                        const selectedRadio = radioOptions.find((input) => input.checked);
+                        if (!selectedRadio) {
+                            warnings.push(`Please answer question ${radioOptions[0].name}.`);
+                            return;
+                        }
+                        if (selectedRadio.dataset.correct === 'true') {
+                            score += 1;
+                        }
+                    }
+                });
+
+                if (warnings.length) {
+                    resultBox.classList.remove('hidden');
+                    resultBox.innerHTML = `<p class="warning">Please fix the quiz answers before submitting.</p><ul>${warnings.map((warning) => `<li>${warning}</li>`).join('')}</ul>`;
+                    resultBox.scrollIntoView({ behavior: 'smooth' });
+                    return;
+                }
+
+                resultBox.classList.remove('hidden');
+                resultBox.innerHTML = `
+                    <h3>Quiz complete!</h3>
+                    <p>You scored <strong>${score}</strong> out of <strong>20</strong>.</p>
+                    <p>Update the placeholder questions and the <code>data-correct</code> values to match your real answers.</p>
+                `;
+                resultBox.scrollIntoView({ behavior: 'smooth' });
+            }
+
+            function resetQuiz() {
+                quizForm.reset();
+                resultBox.classList.add('hidden');
+                startButton.focus();
+            }
+        </script>
+    </body>
+</html>
